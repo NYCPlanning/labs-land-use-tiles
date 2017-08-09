@@ -2,6 +2,7 @@ const express = require('express');
 const tilestrata = require('tilestrata');
 const vtile = require('tilestrata-vtile');
 const mapnik = require('tilestrata-mapnik');
+const disk = require('tilestrata-disk');
 
 const app = express();
 const strata = tilestrata();
@@ -29,7 +30,8 @@ strata
   .route('tile.mvt')
   .use(vtile(vectorConfig))
   .route('tile.png')
-  .use(mapnik(rasterConfig));
+  .use(mapnik(rasterConfig))
+  // .use(disk.cache({ dir: './cache/' }));
 
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
