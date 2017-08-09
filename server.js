@@ -31,7 +31,7 @@ strata
   .use(vtile(vectorConfig))
   .route('tile.png')
   .use(mapnik(rasterConfig))
-  // .use(disk.cache({ dir: './cache/' }));
+  .use(disk.cache({ dir: './cache/' }));
 
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
