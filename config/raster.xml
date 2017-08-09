@@ -64,7 +64,7 @@
     <Datasource>
       <Parameter name="type">shape</Parameter>
       <!-- you can also point to your shapefile without the 'shp' extention -->
-      <Parameter name="file">../data/support_mappluto.shp</Parameter>
+      <Parameter name="file">../data/pluto.shp</Parameter>
     </Datasource>
   </Layer>
 
