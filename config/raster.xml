@@ -1,0 +1,71 @@
+<Map srs="+init=epsg:3857">
+  <Style name="pluto">
+    <Rule>
+    </Rule>
+    <Rule>
+      <Filter>[landuse] = '01'</Filter>
+      <PolygonSymbolizer fill="#f4f455" fill-opacity="1" clip="true" />
+      <LineSymbolizer stroke="#f4f455"/>
+    </Rule>
+    <Rule>
+      <Filter>[landuse] = '02'</Filter>
+      <PolygonSymbolizer fill="#f7d496" fill-opacity="1" clip="true" />
+      <LineSymbolizer stroke="#f7d496"/>
+    </Rule>
+    <Rule>
+      <Filter>[landuse] = '03'</Filter>
+      <PolygonSymbolizer fill="#FF9900" fill-opacity="1" clip="true" />
+      <LineSymbolizer stroke="#FF9900"/>
+    </Rule>
+    <Rule>
+      <Filter>[landuse] = '04'</Filter>
+      <PolygonSymbolizer fill="#f7cabf" fill-opacity="1" clip="true" />
+      <LineSymbolizer stroke="#f7cabf"/>
+    </Rule>
+    <Rule>
+      <Filter>[landuse] = '05'</Filter>
+      <PolygonSymbolizer fill="#ea6661" fill-opacity="1" clip="true" />
+      <LineSymbolizer stroke="#ea6661"/>
+    </Rule>
+    <Rule>
+      <Filter>[landuse] = '06'</Filter>
+      <PolygonSymbolizer fill="#d36ff4" fill-opacity="1" clip="true" />
+      <LineSymbolizer stroke="#d36ff4"/>
+    </Rule>
+    <Rule>
+      <Filter>[landuse] = '07'</Filter>
+      <PolygonSymbolizer fill="#dac0e8" fill-opacity="1" clip="true" />
+      <LineSymbolizer stroke="#dac0e8"/>
+    </Rule>
+    <Rule>
+      <Filter>[landuse] = '08'</Filter>
+      <PolygonSymbolizer fill="#5CA2D1" fill-opacity="1" clip="true" />
+      <LineSymbolizer stroke="#5CA2D1"/>
+    </Rule>
+    <Rule>
+      <Filter>[landuse] = '09'</Filter>
+      <PolygonSymbolizer fill="#8ece7c" fill-opacity="1" clip="true" />
+      <LineSymbolizer stroke="#8ece7c"/>
+    </Rule>
+    <Rule>
+      <Filter>[landuse] = '10'</Filter>
+      <PolygonSymbolizer fill="#bab8b6" fill-opacity="1" clip="true" />
+      <LineSymbolizer stroke="#bab8b6"/>
+    </Rule>
+    <Rule>
+      <Filter>[landuse] = '11'</Filter>
+      <PolygonSymbolizer fill="#5f5f60" fill-opacity="1" clip="true" />
+      <LineSymbolizer stroke="#5f5f60"/>
+    </Rule>
+  </Style>
+
+  <Layer name="pluto" status="on" srs="+init=epsg:3857">
+    <StyleName>pluto</StyleName>
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <!-- you can also point to your shapefile without the 'shp' extention -->
+      <Parameter name="file">../data/support_mappluto.shp</Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>
