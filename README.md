@@ -17,6 +17,7 @@ The app uses [tilestrata](https://github.com/naturalatlas/tilestrata), an open s
 ## Raster Style
 
 The rasters created are styled to reflect the `landuse` column in MapPLUTO, using DCP's standard colors for land use codes.
+
 ![tile](https://user-images.githubusercontent.com/1833820/29149689-c959b7ee-7d43-11e7-8c3f-9521c3bd123b.png)
 
 The mapnik XML configuration for these colors is in [config.xml](https://github.com/NYCPlanning/labs-land-use-tiles/blob/master/config/raster.xml)
