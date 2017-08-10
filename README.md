@@ -26,5 +26,5 @@ The mapnik XML configuration for these colors is in [config.xml](https://github.
 The microservice is designed to be deployed using `dokku`.  It contains two additional files (`apt-packages` and `apt-repositories`) that work with the `dokku-apt` plugin to install low-level dependencies in the container.  
 
 ## Why?
-We have had success using a [self-hosted carto server](https://github.com/chriswhong/docker-cartodb) for mapping apps, but our installation had issues rendering tiles of NYC parcels at medium zoom levels, where a tile could contain many thousands of features.  A microservice for land us tiles is a good alternative that doesn't require a lot of work to configure and deploy, and can be updated quickly when the data changes.  No databases, no complex servers, just a simple node app using tilestrata.
+We have had success using a [self-hosted carto server](https://github.com/chriswhong/docker-cartodb) for mapping apps, but our installation had issues rendering tiles of NYC parcels at medium zoom levels, where a tile could contain many thousands of features.  A microservice for land use tiles is a good alternative that doesn't require a lot of work to configure and deploy, and can be updated quickly when the data changes.  No databases, no complex servers, just a simple node app using tilestrata.
 
