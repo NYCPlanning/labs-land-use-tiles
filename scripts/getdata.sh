@@ -6,7 +6,7 @@ rm -rf tmp && \
 rm -rf data && \
 [[ -d data ]] || mkdir data && \
 cd tmp && \
-wget --no-check-certificate -O pluto.zip "https://cartoprod.capitalplanning.nyc/user/cpp/api/v2/sql?format=SHP&filename=pluto&q=SELECT a.the_geom_webmercator as the_geom, a.landuse, b.description, address FROM support_mappluto a LEFT JOIN support_landuse_lookup b ON a.landuse::integer = b.code" && \
+wget --no-check-certificate -O pluto.zip "https://carto.planninglabs.nyc/user/cpp/api/v2/sql?format=SHP&filename=pluto&q=SELECT%20a.the_geom_webmercator%20as%20the_geom,%20a.landuse,%20b.description,%20address%20FROM%20support_mappluto%20a%20LEFT%20JOIN%20support_landuse_lookup%20b%20ON%20a.landuse::integer%20=%20b.code" && \
 ls && \
 unzip pluto.zip && \
 rm pluto.zip
